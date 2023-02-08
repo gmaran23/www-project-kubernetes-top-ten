@@ -2,6 +2,8 @@
 
 The security context of a workload in Kubernetes is highly configurable which can lead to serious security misconfigurations propagating across and organization’s workloads and clusters. The [2021 Kubernetes Security Survey](https://www.redhat.com/en/resources/kubernetes-adoption-security-market-trends-2021-overview) from Redhat stated that nearly 60% of respondents have experienced a misconfiguration incident in their Kubernetes environments in the last 12 months. 
 
+![Insecure Workload Configuration - Illustration](/assets/images/K01-2022.gif)
+
 ### Description
 
 Kubernetes manifests contain many different configurations that can affect the reliability, security, and scalability of a given workload. These configurations should be audited and remediated continuously. Some examples of high-impact manifest configurations are below:
@@ -67,6 +69,8 @@ Maintaining secure configurations throughout a large, distributed Kubernetes env
 
 Tools such as Open Policy Agent can be used as a policy engine to detect these common misconfigurations. The CIS Benchmark for Kubernetes can also be used as a starting point for discovering misconfigurations. 
 
+
+![Insecure Workload Configuration - Mitigations](/assets/images/K01-2022-mitigation.gif)
 
 
 ### Example Attack Scenarios
